@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomato - Fresh Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">
+                <img src="frontend_assets/logo.png" alt="Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for food..." id="search-input">
+                <button id="search-btn"><img src="frontend_assets/search_icon.png" alt="Search"></button>
+            </div>
+            <div class="header-icons">
+                <div class="cart-icon" id="cart-icon">
+                    <img src="frontend_assets/basket_icon.png" alt="Cart">
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Order Your <span>Favorite Food</span></h1>
+                <p>Fresh and delicious food delivered to your doorstep</p>
+            </div>
+            <div class="hero-img">
+                <img src="frontend_assets/header_img.png" alt="Hero Food">
+            </div>
+        </section>
+
+        <!-- Food Menu Section -->
+        <section class="food-menu">
+            <h2>Our <span>Menu</span></h2>
+            <div class="menu-categories" id="menu-categories">
+                <!-- Categories will be added by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Food Items Section -->
+        <section class="food-list" id="food-list">
+            <!-- Food items will be added by JavaScript -->
+        </section>
+
+        <!-- Cart Section -->
+        <div class="cart-overlay" id="cart-overlay"></div>
+        <div class="cart-sidebar" id="cart-sidebar">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <img src="frontend_assets/cross_icon.png" alt="Close" id="close-cart">
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be added by JavaScript -->
+            </div>
+            <div class="cart-footer">
+                <div class="total">
+                    <span>Total:</span>
+                    <span id="cart-total">$0</span>
+                </div>
+                <button class="checkout-btn" id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
